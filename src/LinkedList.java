@@ -21,7 +21,10 @@ public class LinkedList {
      */
     public void add(int item) {
         Node node = new Node(item);
+        add(node);
+    }
 
+    public void add(Node node) {
         if (head == null) {
             head = node;
             return;
