@@ -2,7 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class LinkedListPartitionTest {
+public class LinkedListPartitionTest extends LinkedNodeParentTest {
 
     private int x; // partition value
 
@@ -88,11 +88,5 @@ public class LinkedListPartitionTest {
 
         LinkedList expected = array2LinkedList(output);
         Assert.assertEquals(actual, expected);
-    }
-
-    private LinkedList array2LinkedList(int[] nums) {
-        LinkedList list = new LinkedList();
-        for (int num : nums) list.add(new Node(num));
-        return list;
     }
 }
