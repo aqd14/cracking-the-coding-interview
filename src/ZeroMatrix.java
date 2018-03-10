@@ -1,9 +1,7 @@
 // Problem: Given a matrix of size MxN. Write a method to, if an element is 0,
 // set its row and column to 0
 
-import java.util.Set;
-
-public class ZeroMatrixSolution {
+public class ZeroMatrix {
 
     // Store column and zero indexes of zero element into the 1st row and 1st column
     public static void setZeros(int[][] matrix) {
@@ -65,7 +63,7 @@ public class ZeroMatrixSolution {
         }
     }
 
-    private static void printMatrix(int[][] a) {
+    public static void printMatrix(int[][] a) {
         if (a == null) return;
         for (int row = 0; row < a.length; row++) {
             for (int col = 0; col < a[row].length; col++) {
@@ -73,20 +71,5 @@ public class ZeroMatrixSolution {
             }
             System.out.println();
         }
-    }
-
-    public static void main(String[] args) {
-        int[][] a = {{1,2,3},{4,0,6},{7,8,9}};
-        ZeroMatrixSolution.printMatrix(a);
-        System.out.println();
-        ZeroMatrixSolution.setZeros(a);
-        ZeroMatrixSolution.printMatrix(a);
-
-        System.out.println("---------------");
-        int[][] b = {{1,2,0},{4,0,6},{7,8,9}};
-        ZeroMatrixSolution.printMatrix(b);
-        System.out.println();
-        ZeroMatrixSolution.setZeros(b);
-        ZeroMatrixSolution.printMatrix(b);
     }
 }

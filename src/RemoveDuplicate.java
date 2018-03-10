@@ -1,8 +1,8 @@
-// Problem: Write code to remove duplicates from an unsorted linked urlifiedStr
+// Problem: Write code to remove duplicates from an unsorted linked list
 // FOLLOW UP: Not use temporary buffer
 
 // usage: java RemoveDuplicateSolution e1 e2 e3 ... en where e is an integer
-public class RemoveDuplicateSolution {
+public class RemoveDuplicate {
 
     // time complexity O(n^2)
     // space complexity O(1)
@@ -36,7 +36,7 @@ public class RemoveDuplicateSolution {
             LinkedList bags = new LinkedList();
             for (String element : args) bags.add(Integer.parseInt(element));
             System.out.println(bags.toString());
-            RemoveDuplicateSolution.removeDuplicate(bags.head());
+            RemoveDuplicate.removeDuplicate(bags.head());
             System.out.println("-------------------");
             System.out.println(bags.toString());
         }

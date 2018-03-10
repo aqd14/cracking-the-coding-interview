@@ -3,7 +3,7 @@
 // become smaller than the original, your method should return the original string.
 // You can assume that the string contains only uppercase and lowercase letters (a-z)
 
-public class StringCompressionSolution {
+public class StringCompression {
 
     public static String compressString(String s) {
         if (s == null) return null;
@@ -26,6 +26,6 @@ public class StringCompressionSolution {
     }
 
     public static void main(String[] args) {
-        if (args.length == 1) System.out.println(StringCompressionSolution.compressString(args[0]));
+        if (args.length == 1) System.out.println(StringCompression.compressString(args[0]));
     }
 }

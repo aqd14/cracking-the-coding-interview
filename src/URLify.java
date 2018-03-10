@@ -7,9 +7,8 @@
 // urlified = "Hello%20World%20%20Java"
 
 import java.util.Scanner;
-import java.util.Arrays;
 
-public class URLifySolution {
+public class URLify {
 
   public static String urlify(String str, int length) {
     if (str == null) return null;
@@ -54,7 +53,7 @@ public class URLifySolution {
     String s = scanner.nextLine();
     System.out.println("Before: " + s);
     int length = scanner.nextInt();
-    String urlifiedStr = URLifySolution.urlify(s, length);
+    String urlifiedStr = URLify.urlify(s, length);
     System.out.println(urlifiedStr);
   }
 }

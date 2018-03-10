@@ -3,7 +3,7 @@
 
 import java.util.Arrays;
 
-public class PalindromePermutationSolution {
+public class PalindromePermutation {
 
     // O(n) solution that requires O(1) space complexity
     // with the assumption that the string contains only ASCII encoding
@@ -46,7 +46,7 @@ public class PalindromePermutationSolution {
         // args = new String[1];
         // args[0] = "ababce";
         if (args.length == 1) {
-            boolean result = PalindromePermutationSolution.isPalindromePermutation(args[0]);
+            boolean result = PalindromePermutation.isPalindromePermutation(args[0]);
             System.out.println("String " + args[0] + ": " + result);
         }
     }

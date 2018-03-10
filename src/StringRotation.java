@@ -1,7 +1,7 @@
 // Given two strings, s1 & s2. Write a function to check if a string is a rotation
 // of other using only one call for isSubString()
 
-public class StringRotationSolution {
+public class StringRotation {
 
     public static boolean isStringRotation(String s1, String s2) {
         if (s1 == null || s2 == null) return false;
@@ -43,15 +43,15 @@ public class StringRotationSolution {
         String s2 = "tedstringrota";
         System.out.println("s1 = " + s1);
         System.out.println("s2 = " + s2);
-        System.out.println(StringRotationSolution.isStringRotation2(s1, s2));
-        System.out.println(StringRotationSolution.isStringRotation2(s1, s2));
+        System.out.println(StringRotation.isStringRotation2(s1, s2));
+        System.out.println(StringRotation.isStringRotation2(s1, s2));
 
         System.out.println("----------------------");
         s1 = "rotatedstring";
         s2 = "tedstringroat";
         System.out.println("s1 = " + s1);
         System.out.println("s2 = " + s2);
-        System.out.println(StringRotationSolution.isStringRotation2(s1, s2));
-        System.out.println(StringRotationSolution.isStringRotation2(s1, s2));
+        System.out.println(StringRotation.isStringRotation2(s1, s2));
+        System.out.println(StringRotation.isStringRotation2(s1, s2));
     }
 }

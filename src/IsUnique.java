@@ -6,7 +6,7 @@
 // s = "abad" -> false
 
 
-public class IsUniqueSolution {
+public class IsUnique {
 
   public static boolean isUnique(String str) {
     int[] count = new int[256];
@@ -23,7 +23,7 @@ public class IsUniqueSolution {
 
   public static void main(String args[]) {
     if (args.length > 0) {
-        System.out.println("Is string " + args[0] + " unique? " + IsUniqueSolution.isUnique(args[0]));
+        System.out.println("Is string " + args[0] + " unique? " + IsUnique.isUnique(args[0]));
     }
   }
 }

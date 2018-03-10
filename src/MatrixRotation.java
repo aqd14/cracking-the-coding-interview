@@ -2,10 +2,9 @@
 // Write a method to rotate the image 90 degree.
 // Do this in place
 
-import java.lang.Math;
 import java.util.Scanner;
 
-public class MatrixRotationSolution {
+public class MatrixRotation {
 
     public static void rotateMatrix(int[][] matrix) {
         if (matrix == null) return;
@@ -35,7 +34,7 @@ public class MatrixRotationSolution {
         matrix[row2][col2] = temp;
     }
 
-    private static int[][] makeMatrix(int N) {
+    public static int[][] makeMatrix(int N) {
         int[][] matrix = new int[N][N];
         for (int row = 0; row < N; row++) {
             for (int col = 0; col < N; col++) {
@@ -59,12 +58,12 @@ public class MatrixRotationSolution {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the size of matrix");
         int N = scanner.nextInt();
-        int[][] matrix = MatrixRotationSolution.makeMatrix(N);
+        int[][] matrix = MatrixRotation.makeMatrix(N);
         System.out.println("Original matrix...");
-        MatrixRotationSolution.printMatrix(matrix);
-        MatrixRotationSolution.rotateMatrix(matrix);
+        MatrixRotation.printMatrix(matrix);
+        MatrixRotation.rotateMatrix(matrix);
         System.out.println();
         System.out.println("Rotated matrix...");
-        MatrixRotationSolution.printMatrix(matrix);
+        MatrixRotation.printMatrix(matrix);
     }
 }

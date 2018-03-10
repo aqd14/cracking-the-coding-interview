@@ -18,7 +18,7 @@ public class LinkedListPartitionTest extends LinkedNodeParentTest {
      * x = 5
      * nums[0] = 3
      */
-    public void testPartitionLinkedList() throws Exception {
+    public void testPartitionLinkedList() {
         // data
         int[] input = {3, 5, 8, 5, 10, 2, 1};
         int[] output = {3, 2, 1, 5, 10, 5, 8};
@@ -39,7 +39,7 @@ public class LinkedListPartitionTest extends LinkedNodeParentTest {
      * x = 5
      * nums[0] = 6
      */
-    public void testPartitionLinkedList2() throws Exception {
+    public void testPartitionLinkedList2() {
         int[] input = {6, 3, 8, 5, 10, 2, 1};
         int[] output = {3, 2, 1, 5, 10, 6, 8};
 
@@ -58,7 +58,7 @@ public class LinkedListPartitionTest extends LinkedNodeParentTest {
      *
      * x = 5
      */
-    public void testPartitionLinkedList3() throws Exception {
+    public void testPartitionLinkedList3() {
         int[] input = {6, 7, 8, 9, 10, 11, 12};
         int[] output = {6, 7, 8, 9, 10, 11, 12};
 
@@ -77,7 +77,7 @@ public class LinkedListPartitionTest extends LinkedNodeParentTest {
      *
      * x = 5
      */
-    public void testPartitionLinkedList4() throws Exception {
+    public void testPartitionLinkedList4() {
         int[] input = {1, 2, 3, 4};
         int[] output = {1, 2, 3, 4};
 

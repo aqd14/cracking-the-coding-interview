@@ -10,7 +10,7 @@
 
 import java.lang.Math;
 
-public class OneAwaySolution {
+public class OneAway {
 
     // Use dynamic programming to calculate the edit distance
     // Time complexity: O(m*n)
@@ -108,7 +108,7 @@ public class OneAwaySolution {
 
     public static void main(String args[]) {
         if (args.length == 2) {
-            System.out.println(OneAwaySolution.hasOneEdit(args[0], args[1]));
+            System.out.println(OneAway.hasOneEdit(args[0], args[1]));
         }
     }
 }
