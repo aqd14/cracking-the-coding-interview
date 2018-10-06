@@ -9,20 +9,20 @@ public class MatrixRotation {
     public static void rotateMatrix(int[][] matrix) {
         if (matrix == null) return;
         if (matrix.length != matrix[0].length) return; // not a squared matrix
-
-        int N = matrix.length;
-        int midRow = N / 2;
-
-        for (int row = 0; row < midRow; row++) {
-            for (int col = 0; col < N; col++) {
-                swap(matrix, row, col, N-row-1, N-col-1);
+        
+        reverse(matrix);
+        
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = r + 1; c < matrix.length; c++) {
+                swap(matrix, r, c, c, r);
             }
         }
-
-        // rotate the middle row if number of rows is odd
-        if (N % 2 != 0) {
-            for (int col = 0; col < N/2; col++) {
-                swap(matrix, midRow, col, midRow, N-col-1);
+    }
+    
+    private static void reverse(int[][] matrix) {
+        for (int r = 0; r < matrix.length / 2; r++) {
+            for (int c = 0; c < matrix.length; c++) {
+                swap(matrix, r, c, matrix.length - r - 1, c);
             }
         }
     }
